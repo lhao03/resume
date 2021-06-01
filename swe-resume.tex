@@ -6,7 +6,6 @@
 % inspired by https://practicaltypography.com/resumes.html
 % License : MIT
 %------------------------
-
 %!TeX program = xelatex
 
 \documentclass[a4paper,11pt]{article}
@@ -132,7 +131,7 @@ UprightFont = OpenSans-SemiBold
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \OpenSansRegular{\small#1} & \OpenSansRegular{#2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -208,77 +207,34 @@ UprightFont = OpenSans-SemiBold
 \resumeItem{Held office hours to help students learn about Test Driven Design, Java and Object Orientated programming.}
 \resumeItem{Invigilated, marked, and tested exam questions.}
 \resumeItemListEnd
-
-\iffalse
-  % \iftrue
-  \resumeSubheading
-  {yeet}{yeet}
-  {yeet}{yeet}
-  \resumeItemListStart
-  \resumeItem{yeet}
-  \resumeItem{yeet}
-  \resumeItem{yeet}
-  \resumeItemListEnd
-
-  \resumeSubheading
-  {yeet}{yeet}
-  {yeet}{yeet}
-  \resumeItemListStart
-  \resumeItem{yeet}
-  \resumeItem{yeet}
-  \resumeItem{yeet}
-  \resumeItemListEnd
-\fi
-
-\resumeSubHeadingListEnd
-
-%-----------EXTRA-----------
-\section{Extracurricular}
-\resumeSubHeadingListStart
-
-\resumeSubheading
-{Director of Outreach and Technology}{Sep 2020 - now}
-{StarHacks}{}
-\resumeItemListStart
-\resumeItem{Led outreach operations of the first iteration of \href{https://www.starhacks.tech/starhacks-i}{\myuline{StarHacks}} (female and non-binary virtual hackathon), bringing in  {\OpenSansBold 800+ }registrants and {\OpenSansBold 350+} attendees in the span of 3 months. Grew Instagram followers by {\OpenSansBold 300\%} (414 to {\OpenSansBold 1250+})}
-\resumeItem{Sent monthly newsletters with MailChimp and posted original content designed with Figma and Canva on Instagram and Twitter. Moderated Discord and set up Discord bots to remind hackers of events and automate role assignment.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Co-lead Software Developer}{Sep 2020 - now}
-{UBC BEST}{}
-\resumeItemListStart
-\resumeItem{Co-leading team of {\OpenSansBold 5-10} students on the development of a cross-platform mobile app that aims to gamify the rehabilitation process for multiple sclerosis patients.}
-\resumeItem{Implemented workflows in GitHub Actions. Mobile app developed using Kotlin Multi-platform and backend developed using MongoDB and Express.}
-\resumeItemListEnd
-\iffalse
-  % \iftrue
-  \resumeSubheading
-  {yeet}{yeet}
-  {yeet}{yeet}
-  \resumeItemListStart
-  \resumeItem{yeet}
-  \resumeItem{yeet}
-  \resumeItem{yeet}
-  \resumeItemListEnd
-
-  \resumeSubheading
-  {yeet}{yeet}
-  {yeet}{yeet}
-  \resumeItemListStart
-  \resumeItem{yeet}
-  \resumeItem{yeet}
-  \resumeItem{yeet}
-  \resumeItemListEnd
-\fi
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{{\href{https://devpost.com/software/seniors-chat}{\myuline{\OpenSansBold Dialogue}}} $|$ {JavaScript, MongoDB, WebRTC, Heroku, Git, Figma}}{Jan 2021}
+\resumeItemListStart
+\resumeItem{In team of 4, developed a full-stack web application using Express.js and MongoDB for the backend and React for the frontend.}
+\resumeItem{Used MongoDB to store user's info and created algorithem to match users with similar interests.}
+\resumeItem{Implemented video calling functionality with socket.io, WebRTC in the browser. Deployed on Heroku.}
+\resumeItem{Average score of{\OpenSansBold{~80-90\%}} from peer judges.}
+\resumeItemListEnd
+\resumeProjectHeading
+{{\href{https://devpost.com/software/ecoeats-sgwzhp}{\myuline{\OpenSansBold EcoEats}}} $|$ {Cloud Vision API, Java, Android, Git, Figma}}{Mar 2020}
+\resumeItemListStart
+\resumeItem{In 24 hours as lead programmer of a group of 4, developed an Android app in Java that brings awareness to the carbon footprint of consumers' meals and advocates for more carbon-friendly products.
+}
+\resumeItem{Uses Google Cloud Vision to analyze photos of food. Presented project to all participants and judges as finalists among {\OpenSansBold 200+} hackers. Awarded Realtor Best Search Experience and Wolfram Award.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
-\section{Speaking and Awards}
+%-----------Extracurricular-----------
+
+\section{Extracurricular}
 \resumeItemListStart
 \resumeItem{{\OpenSansBold Speaking}: \href{https://www.linkedin.com/posts/joytojob_students-technology-webinar-activity-6798041515332562944-sGOh}{\myuline{JoytoJob Panel}}, \href{https://www.starhacks.tech/starhacks-i}{\myuline{StarHacks Workshop Host}}}
-\resumeItem{{\OpenSansBold Awards}: Finalist and Realtor Best Search Experience Award at cmd-f 2019, Voiceflow Award at nwHacks 2019}
+\resumeItem{{\OpenSansBold Community}: Director of Outreach and Technology at \href{https://www.starhacks.tech/}{\myuline{StarHacks}}, Marketing Coordinator at \href{https://www.nwplus.io/}{\myuline{nwPlus}}, mentor at AIHacks and SuperPosition, mentor for connect-f 2020}
 \resumeItemListEnd
 
 %-------------------------------------------
