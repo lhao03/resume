@@ -6,6 +6,7 @@
 % inspired by https://practicaltypography.com/resumes.html
 % License : MIT
 %------------------------
+
 %!TeX program = xelatex
 
 \documentclass[a4paper,11pt]{article}
@@ -131,7 +132,7 @@ UprightFont = OpenSans-SemiBold
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \OpenSansRegular{\small#1} & \OpenSansRegular{#2} \\
+      \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -175,7 +176,7 @@ UprightFont = OpenSans-SemiBold
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{University of British Columbia}{ Sep 2019 - May 2023 (Expected)}
+{University of British Columbia}{ Sep 2019 - May 2023}
 {Bachelor of Science in Computer Science and minor in Biochemistry}{ cGPA: 3.90/4.33}
 \resumeSubHeadingListEnd
 
@@ -183,59 +184,109 @@ UprightFont = OpenSans-SemiBold
 \section{Work Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Garage Software Engineering Intern}{May 2021 - now}
-{\href{https://www.microsoft.com/en-us/garage/}{Microsoft}}{}
+{Software Engineering Intern}{May 2021 - Aug 2021}
+{\href{https://www.microsoft.com/en-us/garage/}{Microsoft - Garage}}{}
 \resumeItemListStart
-\resumeItem{The  \href{https://www.microsoft.com/en-us/garage/}{\myuline{Garage internship}} offers a small number of talented students a unique opportunity to work with each other in teams, hack on contemporary technology, conduct customer research, design, and develop a product in 12-16 weeks.}
+\resumeItem{Collaborated with team of 6 other interns to plan and develop a
+  internal team requested feature from the ground up in React, Redux and TypeScript to allow
+  developers to efficiently and easily work with the Microsoft ecosystem.}
+\resumeItem{Conducted user research and used over {\OpenSansBold 10+} responses to design
+  first iteration of user interface for feature. Presented technical architectural diagrams to the
+  rest of the developers and developed proof of concepts to decide on technical design.}
+\resumeItem{Led development of user interface for Teams App and new feature for live production application,
+  actively communicating with Program Manager intern and UX intern to seek feedback.}
+\resumeItem{Refactored Teams App codebase, removing over {\OpenSansBold 500+} lines. Fixed
+  critical bug freezing the Teams App and
+  discovered \href{https://github.com/microsoftgraph/microsoft-graph-explorer-v4/pull/1008}{\myuline{bug}}
+  within Graph Explorer and had the fix merged into the live production application.}
+\resumeItem{Reviewed teammates pull requests, maintained forked GitHub repositories by
+  fetching upsteam and resolving merge conflicts and set up linting rules to maintain
+  code standards. Reviewed and approved over {\OpenSansBold 44+} pull requests, the most of any other intern.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Software Developer Co-op}{Jan - May 2021}
 {\href{http://www.proofcentre.ca/}{PROOF (Prevention of Organ Failure) Centre of Excellence}}{}
 \resumeItemListStart
-\resumeItem{Redesigned a  fragile natural language processing pipeline to be more robust to extract patient information from any type of clinical note. Implemented in Python using pandas, nltk, scispaCy, spaCy and regular patterns. Helped publish a \href{https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1}{\myuline{preprint on medRxiv.}}}
+\resumeItem{Redesigned a fragile natural language processing pipeline to be more robust to extract patient information from any type of clinical note. Implemented in Python using pandas, nltk, scispaCy, spaCy and regular patterns. Helped publish a \href{https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1}{\myuline{preprint on medRxiv.}}}
 \resumeItem{Introduced algorithms to auto-correct optical character recognition errors for features of interest (FoI), increasing accuracy for an FoI by {\OpenSansBold 5-10\%}. Added a training module to automatically find the best pipeline parameters in training period.}
 \resumeItem{Abstracted parts of pipeline to be able to generalize on any type of clinical note. Reduced encoding code-base size by over {\OpenSansBold 50\%} while maintaining or increasing pipeline accuracy. Achieved {\OpenSansBold 91\%} validation accuracy on 100 unseen clinical notes.}
 \resumeItem{Gave weekly presentations to medical professionals, faculty members and data scientists to show progress on pipeline and request feedback.}
 \resumeItemListEnd
 
 \resumeSubheading
-{Computer Science Teaching Assistant}{Jan - Apr 2021}
+{Computer Science Teaching Assistant}{Jan - Apr 2021, Jul - Aug 2021}
 {University of British Columbia}{}
 \resumeItemListStart
 \resumeItem{Led {\OpenSansBold 3} labs for CPSC 210 (Software Construction) of overall {\OpenSansBold 20} students.}
-\resumeItem{Held weekly office hours to help students learn about Test Driven Design, Java and Object Orientated programming.}
+\resumeItem{Held office hours to help students learn about Test Driven Design, Java and Object Orientated programming.}
 \resumeItem{Invigilated, marked, and tested exam questions.}
 \resumeItemListEnd
+
+\iffalse
+  % \iftrue
+  \resumeSubheading
+  {yeet}{yeet}
+  {yeet}{yeet}
+  \resumeItemListStart
+  \resumeItem{yeet}
+  \resumeItem{yeet}
+  \resumeItem{yeet}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {yeet}{yeet}
+  {yeet}{yeet}
+  \resumeItemListStart
+  \resumeItem{yeet}
+  \resumeItem{yeet}
+  \resumeItem{yeet}
+  \resumeItemListEnd
+\fi
+
+\resumeSubHeadingListEnd
+
+%-----------EXTRA-----------
+\section{Extracurricular}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Director of Outreach and Technology}{Sep 2020 - now}
+{StarHacks}{}
+\resumeItemListStart
+\resumeItem{Led outreach operations of the first iteration of \href{https://www.starhacks.tech/starhacks-i}{\myuline{StarHacks}} (female and non-binary virtual hackathon), bringing in  {\OpenSansBold 800+ }registrants and {\OpenSansBold 350+} attendees in the span of 3 months. Grew Instagram followers by {\OpenSansBold 300\%} (414 to {\OpenSansBold 1250+})}
+\resumeItem{Sent monthly newsletters with MailChimp and posted original content designed with Figma and Canva on Instagram and Twitter. Moderated Discord and set up Discord bots to remind hackers of events and automate role assignment.}
+\resumeItemListEnd
+
+\iffalse
+  % \iftrue
+  \resumeSubheading
+  {yeet}{yeet}
+  {yeet}{yeet}
+  \resumeItemListStart
+  \resumeItem{yeet}
+  \resumeItem{yeet}
+  \resumeItem{yeet}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {yeet}{yeet}
+  {yeet}{yeet}
+  \resumeItemListStart
+  \resumeItem{yeet}
+  \resumeItem{yeet}
+  \resumeItem{yeet}
+  \resumeItemListEnd
+\fi
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{{\href{https://devpost.com/software/seniors-chat}{\myuline{\OpenSansBold Dialogue}}} $|$ {JavaScript, MongoDB, Express.js, WebRTC, Heroku, Git, Figma}}{Jan 2021}
-\resumeItemListStart
-\resumeItem{In team of 4, developed a full-stack web application using Express.js and MongoDB for the backend and React for the frontend.}
-\resumeItem{Used MongoDB to store user's info and created algorithem to match users with similar interests.}
-\resumeItem{Implemented video calling functionality with socket.io, WebRTC in the browser. Deployed on Heroku.}
-\resumeItem{Average score of{\OpenSansBold{~80-90\%}} from peer judges.}
-\resumeItemListEnd
-\resumeProjectHeading
-{{\href{https://devpost.com/software/ecoeats-sgwzhp}{\myuline{\OpenSansBold EcoEats (Finalist)}}} $|$ {Google Cloud Vision API, Java, Android, Git, Figma}}{Mar 2020}
-\resumeItemListStart
-\resumeItem{In 24 hours as lead programmer of a group of 4, developed an Android app in Java that brings awareness to the carbon footprint of consumers' meals and advocates for more carbon-friendly products.
-}
-\resumeItem{Uses Google Cloud Vision API to analyze photos of food. Presented project to all participants and judges as finalists among {\OpenSansBold 200+} hackers. Awarded Realtor Best Search Experience and Wolfram Award.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-%-----------Extracurricular-----------
-
-\section{Extracurricular}
-\resumeItemListStart
-\resumeItem{{\OpenSansBold Speaking}: \href{https://www.linkedin.com/posts/joytojob_students-technology-webinar-activity-6798041515332562944-sGOh}{\myuline{JoytoJob Panel}}, \href{https://www.hydrangeahacks.tech/}{\myuline{Hydrangea Hacks Workshop Host}}, \href{https://www.starhacks.tech/starhacks-i}{\myuline{StarHacks Workshop Host}}, \href{https://citro.tech/citrohacks/index.html}{\myuline{Citro Hacks Workshop Host}}}
-\resumeItem{{\OpenSansBold Community}: Director of Outreach and Technology at \href{https://www.starhacks.tech/}{\myuline{StarHacks}}, Marketing Coordinator at \href{https://www.nwplus.io/}{\myuline{nwPlus}}, mentor at AIHacks and Superposition, mentor for connect-f 2020}
-\resumeItemListEnd
-
+\iffalse
+  \section{Speaking and Awards}
+  \resumeItemListStart
+  \resumeItem{{\OpenSansBold Speaking}: \href{https://www.linkedin.com/posts/joytojob_students-technology-webinar-activity-6798041515332562944-sGOh}{\myuline{JoytoJob Panel}}, \href{https://www.starhacks.tech/starhacks-i}{\myuline{StarHacks Workshop Host}}}
+  \resumeItem{{\OpenSansBold Awards}: Finalist and Realtor Best Search Experience Award at cmd-f 2019, Voiceflow Award at nwHacks 2019}
+  \resumeItemListEnd
+\fi
 %-------------------------------------------
 \end{document}
