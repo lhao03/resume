@@ -25,7 +25,7 @@
 \usepackage{wrapfig}
 \usepackage{graphicx}
 
-%--------------UNDERLINING---------------
+%--------------UNDERLINING--
 % taken from https://alexwlchan.net/2017/10/latex-underlines/
 
 \usepackage{contour}
@@ -40,11 +40,11 @@
 	\llap{\contour{white}{#1}}%
 }
 
-%----------------------------------------
+%---------------------------
 
 \graphicspath{ {./Images/} }
 
-%----------FONT OPTIONS----------
+%----------FONT OPTIONS-----
 \usepackage{fontspec}
 \usepackage{fontawesome5}
 
@@ -144,7 +144,7 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}\OpenSansRegular}
 		\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
+%---------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -171,26 +171,20 @@
 	\thinspace \thinspace
 	\myuline{\OpenSansRegular lhao03.github.io}}
 
-%-----------EDUCATION-----------
+%-----------EDUCATION--------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
 {University of British Columbia}{ Sep 2019 - May 2023 (Expected)}
-{Bachelor of Science in Computer Science and minor in Biochemistry}{ cGPA: 3.90/4.33}
+{Bachelor of Science in Computer Science and Biochemistry}{ cGPA: 3.90/4.33}
+\resumeItemListStart
+\resumeItem{Courses of Interest: Molecular Virology, Intermediate Algorithm Design and Analysis, Computer Systems, Medical Biochemistry}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%-----------EXPERIENCE-----------
-\section{Work Experience}
+%------------Industry--------
+\section{Industry Experience}
 \resumeSubHeadingListStart
-
-\resumeSubheading
-{University of British Columbia}{Jan 2021 - now}
-{Computer Science Teaching Assistant}{}
-\resumeItemListStart
-\resumeItem{Previously taught CPSC 210 (Software Construction), now teaching CPSC 110 (Systematic Program Design).}
-\resumeItem{Led labs, invigilated and graded exams/problem sets, and taught concepts such as Test Driven Design, Java, Object Orientated programming, design patterns, functional programming concepts and Racket.}
-\resumeItem{Received 80\%+ evaluation score from more than 100+ students.}
-\resumeItemListEnd
 
 \resumeSubheading
 {\href{https://www.microsoft.com/en-us/garage/}{Microsoft}}{May - Aug 2021}
@@ -215,40 +209,74 @@
 
 \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
+%-----------PROJECTS---------
+% \section{Projects}
+% \resumeSubHeadingListStart
+% \resumeProjectHeading
+% {{\href{https://devpost.com/software/seniors-chat}{\myuline{\OpenSansBold Dialogue}}} $|$ {JavaScript, MongoDB, Express.js, WebRTC, Heroku, Git, Figma}}{nwHacks 2021}
+% \resumeItemListStart
+% \resumeItem{Full-stack web application to match users with similar interests and facilitate video calling.}
+% \resumeItem{Created algorithm to match users with similar interests.}
+% \resumeItem{Average score of{\OpenSansBold{~80-90\%}} from peer judges.}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {{\href{https://devpost.com/software/ecoeats-sgwzhp}{\myuline{\OpenSansBold EcoEats (Finalist)}}} $|$ {Google Cloud Vision API, Java, Android, Git, Figma}}{cmd-f 2020}
+% \resumeItemListStart
+% \resumeItem{Android app that brings awareness to the carbon footprint of consumers' meals and advocates for more carbon-friendly products by analyzing images of food.
+% }
+% \resumeItem{Presented project to all participants and judges as finalists (top 5) among {\OpenSansBold 200+} hackers. Awarded Realtor Best Search Experience and Wolfram Award.}
+% \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+
+%-----------Teaching---------
+
+\section{Teaching Experience}
 \resumeSubHeadingListStart
-\resumeProjectHeading
-{{\href{https://devpost.com/software/seniors-chat}{\myuline{\OpenSansBold Dialogue}}} $|$ {JavaScript, MongoDB, Express.js, WebRTC, Heroku, Git, Figma}}{nwHacks 2021}
+
+\resumeSubheading
+{Sytematic Program Design (CPSC 110)}{Winter 2021}
+{Computer Science Teaching Assistant}{}
 \resumeItemListStart
-\resumeItem{Full-stack web application to match users with similar interests and facilitate video calling.}
-\resumeItem{Created algorithm to match users with similar interests.}
-\resumeItem{Average score of{\OpenSansBold{~80-90\%}} from peer judges.}
+\resumeItem{Led labs, graded exams/problem sets, and taught concepts such as functional programming concepts, data driven programming in Racket.}
 \resumeItemListEnd
 
-\resumeProjectHeading
-{{\href{https://devpost.com/software/ecoeats-sgwzhp}{\myuline{\OpenSansBold EcoEats (Finalist)}}} $|$ {Google Cloud Vision API, Java, Android, Git, Figma}}{cmd-f 2020}
+\resumeSubheading
+{Software Construction (CPSC 210)}{Winter 2020, Summer 2021}
+{Computer Science Teaching Assistant}{}
 \resumeItemListStart
-\resumeItem{Android app that brings awareness to the carbon footprint of consumers' meals and advocates for more carbon-friendly products by analyzing images of food.
-}
-\resumeItem{Presented project to all participants and judges as finalists (top 5) among {\OpenSansBold 200+} hackers. Awarded Realtor Best Search Experience and Wolfram Award.}
+\resumeItem{Led labs, invigilated and graded exams, and graded final projects, and taught concepts such as Test Driven Design, Design Patterns and Object Oriented programming in Java.}
+\resumeItem{Received 80\%+ evaluation score from more than 100+ students.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+%----------------------------
 
-%-----------Extracurricular-----------
+%-----------Extracurricular--
 
 \section{Extracurricular}
 \resumeItemListStart
 \resumeItem{
 	Director of Outreach and Technology at StarHacks,
-	Marketing Coordinator at nwPlus,
+	Marketing Co-Director at nwPlus,
 	Joytojob Panelist,
 	StarHacks Workshop Host,
 	Citro Hacks Workshop Host,
-	Hacking 4 Community Panelist
+	Hacking 4 Community Panelist,
+	HackCamp Workshop Host
 }
 \resumeItemListEnd
 
-%-------------------------------------------
+%----------------------------
+
+%-----------Skills-----------
+
+\section{Skills}
+\resumeItemListStart
+\resumeItem{Programming Languages: C, Python, Racket, Java}
+\resumeItem{Tools: Git, LaTeX, Vim}
+\resumeItemListEnd
+
+%----------------------------
 \end{document}
