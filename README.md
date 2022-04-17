@@ -1,2 +1,2 @@
 to compile: 
-`xelatex resume.tex`
+`xelatex resume-Lucy-Hao.tex`
