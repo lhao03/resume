@@ -52,8 +52,6 @@
 % but I'd still need to change compiler to XeLaTeX to include the title font
 % \usepackage{charter}
 
-\setmainfont{XCharter}
-
 \newfontfamily{\OpenSansRegular}{OpenSans-Regular}[
 	Path = Fonts/,
 	Extension = .ttf,
@@ -184,8 +182,15 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
+{\href{}{Capital One}}{June - current}
+{Software Engineering Intern}{New York, United States}
+\resumeItemListStart
+\resumeItem{Enterprise Products and Platforms Technology (EP2)}
+\resumeItemListEnd
+
+\resumeSubheading
 {\href{https://www.microsoft.com/en-us/garage/}{Microsoft}}{May - Aug 2021}
-{Software Engineering Intern (Garage Program)}{}
+{Software Engineering Intern (Garage Program)}{Vancouver, Canada}
 \resumeItemListStart
 \resumeItem{Collaborated with a team of 6 interns to plan and develop an internal team requested feature in React, Redux, and TypeScript which allowed developers to efficiently and easily try out the Microsoft Graph API.}
 \resumeItem{Presented technical architectural diagrams to developers and developed proof of concepts to decide on technical designs. Added static analysis tools and pre-commit hooks, saving time for PR reviews.}
@@ -200,13 +205,14 @@
 
 \resumeSubheading
 {\href{http://www.proofcentre.ca/}{PROOF (Prevention of Organ Failure) Centre of Excellence}}{Jan - May 2021}
-{Software Developer Co-op}{}
+{Software Developer Co-op}{Vancouver, Canada}
 \resumeItemListStart
-\resumeItem{Redesigned a fragile natural language processing pipeline to extract patient information from any type of clinical note. Implemented in Python using pandas, nltk, scispaCy, spaCy, and regular expressions.}
-\resumeItem{Reduced the encoding code-base size by over {\OpenSansBold 50\%} through abstraction while increasing pipeline accuracy. Achieved {\OpenSansBold 91\%} validation accuracy on a hundred unseen clinical notes.}
-\resumeItem{Gave weekly presentations to medical professionals, faculty members, and data scientists to show progress on pipeline and request feedback.}
+\resumeItem{Redesigned a fragile natural language processing pipeline to extract patient information from any type of clinical note with pre-trained word embeddings. Implemented in Python using pandas, nltk, scispaCy, spaCy, and regular expressions.}
+\resumeItem{Reduced the encoding code-base size by over {\OpenSansBold 50\%} through abstraction while increasing pipeline accuracy. Achieved {\OpenSansBold 91\%} validation accuracy.}
+\resumeItem{Published: Chen, Y., Hao, L., Zou, V.Z., Hollander, Z., Ng, R.T., Isaac, K.V.
+	{\href{https://doi.org/10.1186/s12874-022-01583-z}{Automated medical chart review for breast cancer outcomes research: a novel natural language processing extraction system.}}
+		{\OpenSansItalic BMC Med Res Methodol 22}, 136 (2022).}
 \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
 %-----------Teaching---------
@@ -235,12 +241,12 @@
 %----------------------------
 
 %-----------Publications-----------
-\section{Publications}
-\resumeItemListStart
-\resumeItem{Chen, Y., Hao, L., Zou, V.Z., Hollander, Z., Ng, R.T., Isaac, K.V.
-	Automated medical chart review for breast cancer outcomes research: a novel natural language processing extraction system.
-		{\OpenSansItalic BMC Med Res Methodol 22}, 136 (2022).}
-\resumeItemListEnd
+% \section{Publications}
+% \resumeItemListStart
+% \resumeItem{Chen, Y., Hao, L., Zou, V.Z., Hollander, Z., Ng, R.T., Isaac, K.V.
+% 	Automated medical chart review for breast cancer outcomes research: a novel natural language processing extraction system.
+% 		{\OpenSansItalic BMC Med Res Methodol 22}, 136 (2022).}
+% \resumeItemListEnd
 
 %----------------------------
 
